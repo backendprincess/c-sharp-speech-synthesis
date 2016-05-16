@@ -1,0 +1,15 @@
+Hello there!
+
+This program is used to master your spelling skills.
+
+"Wordlists" button takes you to the space, where you are free to create, edit or delete your wordlists to practice.
+
+After pressing the "Go" button and choosing one of the wordlists the game starts.
+Press "Listen" button and listen to the word pronounced.
+Then try to write it down in the special field and press the "Submit" button -- and the result appears in the richTextBox.
+Then click "Next" or "Prev" to get another word.
+
+If you are sure you wanna finish the test, please press "Submit all and finish".
+Voila! Congrats! Here is your result.
+
+Enjoy!

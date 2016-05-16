@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfWord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Word>
+    <content>camomile</content>
+  </Word>
+  <Word>
+    <content>rose</content>
+  </Word>
+  <Word>
+    <content>lilly</content>
+  </Word>
+  <Word>
+    <content>violet</content>
+  </Word>
+  <Word>
+    <content>jasmine</content>
+  </Word>
+</ArrayOfWord>

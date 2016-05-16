@@ -1,0 +1,14 @@
+E:\CoursePaper\TeachMe\TeachMe\bin\Release\TeachMe.exe.config
+E:\CoursePaper\TeachMe\TeachMe\bin\Release\TeachMe.exe
+E:\CoursePaper\TeachMe\TeachMe\bin\Release\TeachMe.pdb
+E:\CoursePaper\TeachMe\TeachMe\obj\Release\TeachMe.csprojResolveAssemblyReference.cache
+E:\CoursePaper\TeachMe\TeachMe\obj\Release\TeachMe.FormAddWordlist.resources
+E:\CoursePaper\TeachMe\TeachMe\obj\Release\TeachMe.FormChooseWordlist.resources
+E:\CoursePaper\TeachMe\TeachMe\obj\Release\TeachMe.FormGame.resources
+E:\CoursePaper\TeachMe\TeachMe\obj\Release\TeachMe.FormInstructions.resources
+E:\CoursePaper\TeachMe\TeachMe\obj\Release\TeachMe.FormMain.resources
+E:\CoursePaper\TeachMe\TeachMe\obj\Release\TeachMe.FormWordlists.resources
+E:\CoursePaper\TeachMe\TeachMe\obj\Release\TeachMe.Properties.Resources.resources
+E:\CoursePaper\TeachMe\TeachMe\obj\Release\TeachMe.csproj.GenerateResource.Cache
+E:\CoursePaper\TeachMe\TeachMe\obj\Release\TeachMe.exe
+E:\CoursePaper\TeachMe\TeachMe\obj\Release\TeachMe.pdb

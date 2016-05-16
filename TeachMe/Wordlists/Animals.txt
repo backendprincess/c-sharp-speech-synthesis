@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfWord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Word>
+    <content>zebra</content>
+  </Word>
+  <Word>
+    <content>giraffe</content>
+  </Word>
+  <Word>
+    <content>cheetah</content>
+  </Word>
+  <Word>
+    <content>crocodile</content>
+  </Word>
+  <Word>
+    <content>parrot</content>
+  </Word>
+  <Word>
+    <content>cat</content>
+  </Word>
+  <Word>
+    <content>dog</content>
+  </Word>
+  <Word>
+    <content>mouse</content>
+  </Word>
+  <Word>
+    <content>horse</content>
+  </Word>
+</ArrayOfWord>
