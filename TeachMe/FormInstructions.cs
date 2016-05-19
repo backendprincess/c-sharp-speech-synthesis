@@ -37,7 +37,7 @@ namespace TeachMe
                 using (StreamReader sr = new StreamReader(path))
                 {
                     String line = sr.ReadToEnd();
-                    richTextBox1.Text = line;
+                    richTextBoxInstructions.Text = line;
                 }
             }
             catch (Exception exx)

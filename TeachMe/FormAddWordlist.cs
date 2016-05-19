@@ -20,11 +20,11 @@ namespace TeachMe
 
         private void FormAddWordlist_Load(object sender, EventArgs e) {  }
 
-        public void Show1()
+        public void initAndShow()
         {
             textBoxTitle.Clear();
             textBoxWord.Clear();
-            listBox.Items.Clear();
+            listBoxWordlist.Items.Clear();
             this.Show();
         }
 
@@ -33,15 +33,37 @@ namespace TeachMe
             string word = textBoxWord.Text;
             if (word.Length > 0)
             {
-                listBox.Items.Add(new Word(word));
-                textBoxWord.Clear();
+                if (ifNotAlreadyAdded(word))
+                {
+                    listBoxWordlist.Items.Add(new Word(word));
+                    textBoxWord.Clear();
+                }
+                else
+                {
+                    textBoxWord.Clear();
+                    MessageBox.Show("This word is already added!");
+                }
             }
+        }
+
+        private bool ifNotAlreadyAdded(string word)
+        {
+            bool res = true;
+            foreach (var i in listBoxWordlist.Items)
+            {
+                if (i.ToString().Equals(word))
+                {
+                    res = false;
+                    break;
+                }
+            }
+            return res;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Boss.getFormWordlists().Show1();
+            Boss.getFormWordlists().ShowAndRepaint();
         }
 
         private string oldPath;
@@ -59,7 +81,7 @@ namespace TeachMe
                 Serialization.SerializeXML(words, path);
             }
             this.Hide();
-            Boss.getFormWordlists().Show1();
+            Boss.getFormWordlists().ShowAndRepaint();
         }
         private string getFilename(string path)
         {
@@ -89,7 +111,7 @@ namespace TeachMe
         private List<Word> getWords()
         {
             List<Word> content = new List<Word>();
-            foreach(var item in listBox.Items)
+            foreach(var item in listBoxWordlist.Items)
             {
                 content.Add(new Word(item.ToString()));
             }
@@ -98,18 +120,18 @@ namespace TeachMe
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (listBox.GetItemText(listBox.SelectedItem).Length > 0)
+            if (listBoxWordlist.GetItemText(listBoxWordlist.SelectedItem).Length > 0)
             {
-                listBox.Items.Remove(listBox.SelectedItem);
+                listBoxWordlist.Items.Remove(listBoxWordlist.SelectedItem);
             }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            string selectedWord = listBox.GetItemText(listBox.SelectedItem);
+            string selectedWord = listBoxWordlist.GetItemText(listBoxWordlist.SelectedItem);
             if (selectedWord.Length > 0)
             {
-                listBox.Items.Remove(listBox.SelectedItem);
+                listBoxWordlist.Items.Remove(listBoxWordlist.SelectedItem);
                 textBoxWord.Text = selectedWord;
             }
 
@@ -120,8 +142,8 @@ namespace TeachMe
             oldPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, ("..\\..\\Wordlists\\" + filename + ".txt")));
             List<Word> words = Serialization.DeserializeXML(oldPath);
             textBoxTitle.Text = filename;
-            listBox.Items.Clear();
-            listBox.Items.AddRange(words.ToArray());
+            listBoxWordlist.Items.Clear();
+            listBoxWordlist.Items.AddRange(words.ToArray());
         }
     }
 }

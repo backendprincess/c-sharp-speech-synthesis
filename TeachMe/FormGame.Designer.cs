@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxWordCounter = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxResultEntered = new System.Windows.Forms.RichTextBox();
             this.btnPrev = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
@@ -38,23 +38,23 @@
             this.btnSubmitAll = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // richTextBoxWordCounter
             // 
-            this.richTextBox1.Enabled = false;
-            this.richTextBox1.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(260, 70);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.richTextBoxWordCounter.Enabled = false;
+            this.richTextBoxWordCounter.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxWordCounter.Location = new System.Drawing.Point(12, 12);
+            this.richTextBoxWordCounter.Name = "richTextBoxWordCounter";
+            this.richTextBoxWordCounter.Size = new System.Drawing.Size(260, 70);
+            this.richTextBoxWordCounter.TabIndex = 0;
+            this.richTextBoxWordCounter.Text = "";
             // 
-            // richTextBox2
+            // richTextBoxResultEntered
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(12, 88);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(260, 79);
-            this.richTextBox2.TabIndex = 1;
-            this.richTextBox2.Text = "";
+            this.richTextBoxResultEntered.Location = new System.Drawing.Point(12, 88);
+            this.richTextBoxResultEntered.Name = "richTextBoxResultEntered";
+            this.richTextBoxResultEntered.Size = new System.Drawing.Size(260, 79);
+            this.richTextBoxResultEntered.TabIndex = 1;
+            this.richTextBoxResultEntered.Text = "";
             // 
             // btnPrev
             // 
@@ -128,20 +128,19 @@
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrev);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.richTextBoxResultEntered);
+            this.Controls.Add(this.richTextBoxWordCounter);
             this.Name = "FormGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeachMe";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox richTextBoxWordCounter;
+        private System.Windows.Forms.RichTextBox richTextBoxResultEntered;
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnSubmit;

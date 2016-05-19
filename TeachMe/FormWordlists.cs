@@ -18,12 +18,7 @@ namespace TeachMe
             InitializeComponent();
         }
 
-        private void FormWordlists_Load(object sender, EventArgs e)
-        {
-            //repaintListBox();
-        }
-
-        public void Show1()
+        public void ShowAndRepaint()
         {
             this.Show();
             repaintListBox();
@@ -31,9 +26,8 @@ namespace TeachMe
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            //this.Close();
             Boss.getFormWordlists().Hide();
-            Boss.getFormMain().Show1();
+            Boss.getFormMain().Show();
         }
 
         private void btnPreview_Click(object sender, EventArgs e)
@@ -54,7 +48,7 @@ namespace TeachMe
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Boss.getFormWordlists().Hide();
-            Boss.getFormAddWordlist().Show1();
+            Boss.getFormAddWordlist().initAndShow();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

@@ -37,7 +37,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.textBoxWord = new System.Windows.Forms.RichTextBox();
             this.labelWord = new System.Windows.Forms.Label();
-            this.listBox = new System.Windows.Forms.ListBox();
+            this.listBoxWordlist = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnSave
@@ -128,11 +128,11 @@
             // 
             // listBox
             // 
-            this.listBox.FormattingEnabled = true;
-            this.listBox.Location = new System.Drawing.Point(15, 82);
-            this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(187, 173);
-            this.listBox.TabIndex = 12;
+            this.listBoxWordlist.FormattingEnabled = true;
+            this.listBoxWordlist.Location = new System.Drawing.Point(15, 82);
+            this.listBoxWordlist.Name = "listBox";
+            this.listBoxWordlist.Size = new System.Drawing.Size(187, 173);
+            this.listBoxWordlist.TabIndex = 12;
             // 
             // FormAddWordlist
             // 
@@ -140,7 +140,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 306);
             this.ControlBox = false;
-            this.Controls.Add(this.listBox);
+            this.Controls.Add(this.listBoxWordlist);
             this.Controls.Add(this.labelWord);
             this.Controls.Add(this.textBoxWord);
             this.Controls.Add(this.btnDelete);
@@ -170,6 +170,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.RichTextBox textBoxWord;
         private System.Windows.Forms.Label labelWord;
-        private System.Windows.Forms.ListBox listBox;
+        private System.Windows.Forms.ListBox listBoxWordlist;
     }
 }

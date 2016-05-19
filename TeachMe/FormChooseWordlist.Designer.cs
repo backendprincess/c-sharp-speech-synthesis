@@ -106,7 +106,6 @@
             this.Name = "FormChooseWordlist";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeachMe";
-            this.Load += new System.EventHandler(this.FormChooseWordlist_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

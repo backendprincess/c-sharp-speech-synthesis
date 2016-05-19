@@ -19,12 +19,7 @@ namespace TeachMe
             InitializeComponent();
         }
 
-        private void FormChooseWordlist_Load(object sender, EventArgs e)
-        {
-            //repaintListBox();
-        }
-
-        public void Show1()
+        public void ShowAndRepaint()
         {
             this.Show();
             repaintListBox();
@@ -62,14 +57,14 @@ namespace TeachMe
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Boss.getFormMain().Show1();
+            Boss.getFormMain().Show();
         }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
             Boss.getFormGame().setFilename(listBoxWordlists.GetItemText(listBoxWordlists.SelectedItem));
             this.Hide();
-            Boss.getFormGame().Show1();
+            Boss.getFormGame().startInitAndShow();
         }
     }
 }

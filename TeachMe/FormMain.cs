@@ -20,24 +20,19 @@ namespace TeachMe
         private void btnGo_Click(object sender, EventArgs e)
         {
             Boss.getFormMain().Hide();
-            Boss.getFormChooseWordlist().Show1();
+            Boss.getFormChooseWordlist().ShowAndRepaint();
         }
 
         private void btnWordlists_Click(object sender, EventArgs e)
         {
             Boss.getFormMain().Hide();
-            Boss.getFormWordlists().Show1();
-        }
-        
-        public void Show1()
-        {
-            this.Show();
+            Boss.getFormWordlists().ShowAndRepaint();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure you want to quit?", "Confirm", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            DialogResult dialogEnsureExit = MessageBox.Show("Are you sure you want to quit?", "Confirm", MessageBoxButtons.YesNo);
+            if (dialogEnsureExit == DialogResult.Yes)
             {
                 System.Windows.Forms.Application.Exit();
             }

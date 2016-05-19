@@ -109,7 +109,6 @@
             this.Name = "FormWordlists";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeachMe";
-            this.Load += new System.EventHandler(this.FormWordlists_Load);
             this.ResumeLayout(false);
 
         }
